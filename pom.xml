@@ -22,7 +22,7 @@
     </properties>
 
     <build>
-        <finalName>service</finalName>
+        <finalName>micro-service</finalName>
     </build>
     <dependencies>
         <dependency>
@@ -100,23 +100,6 @@
             <scope>test</scope>
             <version>${junit.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.jboss.arquillian.junit</groupId>
-            <artifactId>arquillian-junit-container</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.shrinkwrap.resolver</groupId>
-            <artifactId>shrinkwrap-resolver-impl-maven</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.valid4j</groupId>
-            <artifactId>http-matchers</artifactId>
-            <scope>test</scope>
-            <version>${version.valid4j}</version>
-        </dependency>
-
     </dependencies>
 
 

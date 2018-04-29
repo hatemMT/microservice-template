@@ -8,9 +8,8 @@ import javax.ws.rs.core.Response;
 @ApplicationScoped
 @Path("health")
 public class HealthController {
-
     @GET
     public Response health() {
-        return Response.ok().build();
+        return Response.ok("OK").build();
     }
 }

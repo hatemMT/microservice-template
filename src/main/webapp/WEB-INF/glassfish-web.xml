@@ -1,0 +1,3 @@
+<glassfish-web-app error-url="">
+    <context-root>/micro-service</context-root>
+</glassfish-web-app>

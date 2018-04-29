@@ -4,11 +4,12 @@ import com.codahale.metrics.jersey2.InstrumentedResourceMethodApplicationListene
 import com.sumerge.service.metrics.MetricsConfigurer;
 
 import javax.inject.Inject;
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
-@javax.ws.rs.ApplicationPath("resources")
+@ApplicationPath("resources")
 public class ApplicationConfig extends Application {
 
     @Inject
@@ -25,11 +26,6 @@ public class ApplicationConfig extends Application {
         return resources;
     }
 
-    /**
-     * Do not modify addRestResourceClasses() method. It is automatically
-     * populated with all resources defined in the project. If required, comment
-     * out calling this method in getClasses().
-     */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.sumerge.service.metrics.DiagnosticFilter.class);
         resources.add(com.sumerge.service.web.CORSFilter.class);
